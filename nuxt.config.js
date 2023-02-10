@@ -1,5 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target: 'static', // default is 'server'
+  // ssr: false, // default is true
   head: {
     title: '-Night Fury',
     htmlAttrs: {
@@ -17,7 +19,7 @@ export default {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap'
       },
- 
+
     ]
   },
 

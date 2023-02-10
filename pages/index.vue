@@ -22,7 +22,7 @@
         <div class="bg-yellow-0 pt-32 md:place-self-center">
           <img
             class="rounded-full mx-auto h-60 md:h-96"
-            src="~/assets/images/ME-1.gif"
+            src="~/assets/images/ME-resize.gif"
           />
         </div>
         <div
