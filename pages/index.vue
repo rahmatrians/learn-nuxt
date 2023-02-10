@@ -22,7 +22,7 @@
         <div class="bg-yellow-0 pt-32 md:place-self-center">
           <img
             class="rounded-full mx-auto h-60 md:h-96"
-            src="~/assets/images/ME.jpg"
+            src="~/assets/images/ME-1.gif"
           />
         </div>
         <div
@@ -600,7 +600,7 @@ export default {
       .from("skill")
       .select();
 
-    console.log("txt", champsData);
+    // console.log("txt", champsData);
     this.portofoliosData = portos;
     this.skillsData = skills;
   },
