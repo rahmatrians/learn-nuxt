@@ -16,9 +16,17 @@
             </div>
           </div>
           <div style="max-height: 550px" class="overflow-hidden">
-            <img
+            <!-- <img
               class="mx-auto w-full"
               :src="require('~/assets/images/' + 'parallax3.jpg')"
+            /> -->
+            <img
+              class="mx-auto w-full"
+              :src="`${
+                data.image_url
+                  ? data.image_url
+                  : 'https://mbfltfpzlzhszrgxfmni.supabase.co/storage/v1/object/public/assets/projects/empty.png'
+              }`"
             />
           </div>
         </div>
@@ -38,7 +46,7 @@
             <h5
               class="text-xl font-poppinsBold uppercase text-x-secondary-opt1"
             >
-              {{ data.progress }}
+              {{ data.progress_status }}
             </h5>
           </div>
           <div class="my-14">
@@ -95,11 +103,12 @@ export default {
     this.id = this.$route.params.id;
 
     const { data, error } = await supabase
-      .from("portofolios")
+      .from("project")
       .select()
       .eq("id", this.id)
       .single();
 
+    console.log("projects ku :", data);
     this.data = data;
   },
 };
